@@ -17,7 +17,7 @@ variable chef_validation_client_name { default = "ops" }
 variable chef_validation_key { default = "" }
 variable chef_run_list {
   type = "list"
-  default = ["role[base]"]
+  default = ["role[cammy_base]", "role[cammy_jenkins]"]
 }
 variable chef_ssl_verify_mode { default = "verify_peer" }
 
